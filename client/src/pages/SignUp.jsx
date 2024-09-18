@@ -78,7 +78,7 @@ export default function SignUp() {
       </div>
 
       <p className="p-2 m-3 text-xl text-center text-red-600 rounded-lg">
-        {error && "Something went wrong!"}
+        {error ? error.message || "Something went wrong!" : ""}
       </p>
     </div>
   );
